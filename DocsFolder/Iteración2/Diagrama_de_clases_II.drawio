@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="clases-post-iteración" name="Clases post-iteración">
+    <mxGraphModel dx="1792" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1450" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;" value="MSGF — Diagrama de clases (post-iteración 2)" vertex="1">
+          <mxGeometry height="40" width="700" x="330" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="persona" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="Persona&lt;div&gt;|---------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;nombre: String&lt;/div&gt;&lt;div&gt;contacto: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="190" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="est" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="Estudiante&lt;div&gt;|---------------------------------------------|&lt;/div&gt;&lt;div&gt;codigo: String&lt;/div&gt;&lt;div&gt;programa: String&lt;/div&gt;&lt;div&gt;|---------------------------------------------|&lt;/div&gt;&lt;div&gt;presentarNotas()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="190" x="40" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="sol" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="Solicitud&lt;div&gt;|---------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;fecha: Date&lt;/div&gt;&lt;div&gt;estado: EstadoSolicitud&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="260" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="prest" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="Prestamo&lt;div&gt;|----------------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;monto: Decimal&lt;/div&gt;&lt;div&gt;saldo: Decimal&lt;/div&gt;&lt;div&gt;estado: EstadoPrestamo&lt;/div&gt;&lt;div&gt;|----------------------------------------------------|&lt;/div&gt;&lt;div&gt;registrarPago()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="220" x="540" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pago" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="Pago&lt;div&gt;|------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;fecha: Date&lt;/div&gt;&lt;div&gt;monto: Decimal&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="1030" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="aporte" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="AporteAnual&lt;div&gt;|---------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;anio: int&lt;/div&gt;&lt;div&gt;monto: Decimal&lt;/div&gt;&lt;div&gt;fechaRecepcion: Date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="190" x="220" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="fondo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="FondoBecasCredito&lt;div&gt;|----------------------------------------------------|&lt;/div&gt;&lt;div&gt;anio: int&lt;/div&gt;&lt;div&gt;presupuestoDisponible: Decimal&lt;/div&gt;&lt;div&gt;|----------------------------------------------------|&lt;/div&gt;&lt;div&gt;asignarPresupuesto()&lt;/div&gt;&lt;div&gt;reservar()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="220" x="505" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="beca" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="BecaCreditoSemestral&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String|periodo: String&lt;/div&gt;&lt;div&gt;costoMatricula: Decimal&lt;/div&gt;&lt;div&gt;estado: EstadoBeca&lt;/div&gt;&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;registrarMatricula()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="230" x="880" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="notas" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="ReporteAcademico&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;periodo: String&lt;/div&gt;&lt;div&gt;promedio: Decimal&lt;/div&gt;&lt;div&gt;creditosAprobados: int&lt;/div&gt;&lt;div&gt;fechaEntrega: Date&lt;/div&gt;&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;validar()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="230" x="1200" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="eval" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="EvaluacionAcademica&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;id: String&lt;/div&gt;&lt;div&gt;cumpleCriterio: Boolean&lt;/div&gt;&lt;div&gt;fecha: Date&lt;/div&gt;&lt;div&gt;|-------------------------------------------------------|&lt;/div&gt;&lt;div&gt;evaluar()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="230" x="1200" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="ctrl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="PoliticaCondonacion&lt;div&gt;|----------------------------------------------------------|&lt;/div&gt;&lt;div&gt;criterioAcademico: String&lt;/div&gt;&lt;div&gt;version: String&lt;/div&gt;&lt;div&gt;|----------------------------------------------------------|&lt;/div&gt;&lt;div&gt;determinarCondonacion()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="240" x="690" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="100" edge="1" parent="1" source="persona" style="endArrow=block;endFill=0;html=1;" target="est" value="generalización">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="101" edge="1" parent="1" source="est" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="sol" value="1 a 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102" edge="1" parent="1" source="sol" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="prest" value="0..1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103" edge="1" parent="1" source="prest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="pago" value="1 a 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" edge="1" parent="1" source="aporte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="fondo" value="financia">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="105" edge="1" parent="1" source="fondo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="beca" value="asigna recursos">
+          <mxGeometry relative="1" x="0.223" as="geometry" />
+        </mxCell>
+        <mxCell id="106" edge="1" parent="1" source="est" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="beca" value="1 a 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="107" edge="1" parent="1" source="beca" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="notas" value="requiere reporte">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="108" edge="1" parent="1" source="notas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="eval" value="se evalúa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="109" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" target="ctrl" value="aplica regla">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="110" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="beca" value="resultado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="111" edge="1" parent="1" source="beca" style="dashed=1;endArrow=open;endFill=0;html=1;" target="prest" value="si hay obligación de pago">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
