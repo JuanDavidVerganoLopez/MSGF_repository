@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="máquina-de-estados-post-iteración" name="Máquina de estados post-iteración">
+    <mxGraphModel dx="1792" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;fontSize=20;fontStyle=1;align=center;" value="Maquina estados&amp;nbsp;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="850" x="280" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="10" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="sol" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Solicitada" vertex="1">
+          <mxGeometry height="60" width="130" x="70" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="eval" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="En evaluación" vertex="1">
+          <mxGeometry height="60" width="150" x="370" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="aprob" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Aprobada" vertex="1">
+          <mxGeometry height="60" width="140" x="370" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rech" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Rechazada" vertex="1">
+          <mxGeometry height="60" width="140" x="540" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="mat" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Matrícula registrada" vertex="1">
+          <mxGeometry height="60" width="170" x="750" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="des" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Crédito desembolsado" vertex="1">
+          <mxGeometry height="60" width="180" x="1100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="notas" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Pendiente de notas" vertex="1">
+          <mxGeometry height="60" width="180" x="1100" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="rev" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Notas evaluadas" vertex="1">
+          <mxGeometry height="60" width="170" x="750" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="cond" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Costo condonado" vertex="1">
+          <mxGeometry height="60" width="170" x="430" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="deuda" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Pago requerido" vertex="1">
+          <mxGeometry height="60" width="170" x="750" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="pago" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="En devolución" vertex="1">
+          <mxGeometry height="60" width="170" x="1130" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="cerr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Periodo cerrado" vertex="1">
+          <mxGeometry height="60" width="160" x="1330" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="100" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sol" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="101" edge="1" parent="1" source="sol" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="eval" value="documentos completos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="102" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="aprob" value="cumple requisitos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103" edge="1" parent="1" source="eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rech" value="no cumple requisitos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="104" edge="1" parent="1" source="aprob" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="mat" value="cupo y presupuesto disponibles">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="105" edge="1" parent="1" source="mat" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="des" value="matrícula confirmada">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="106" edge="1" parent="1" source="des" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="notas" value="finaliza semestre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="107" edge="1" parent="1" source="notas" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rev" value="estudiante presenta notas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="108" edge="1" parent="1" source="rev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="cond" value="cumple criterio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="109" edge="1" parent="1" source="rev" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="deuda" value="no cumple criterio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="110" edge="1" parent="1" source="deuda" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="pago" value="se genera obligación">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="111" edge="1" parent="1" source="pago" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="cerr" value="saldo pagado">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="112" edge="1" parent="1" source="cond" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="cerr" value="condonación aplicada">
+          <mxGeometry relative="1" x="0.0513" as="geometry" />
+        </mxCell>
+        <mxCell id="113" edge="1" parent="1" source="rech" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="cerr" value="cierre sin desembolso">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
